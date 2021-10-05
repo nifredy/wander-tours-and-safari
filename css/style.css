@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +11,102 @@ html {
   overflow-x: hidden;
   font-family: "poppins";
 }
+.fa {
+  width: 48px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: #eee;
+  font: normal 25px "FontAwesome";
+  line-height: 50px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.fa-angle-double-down:before {
+  content: "\f107";
+}
+
+.bounce {
+  position: absolute;
+  bottom: 30px;
+  left: 49.5%;
+  width: 50px;
+  height: 50px;
+  margin-left: -20px;
+  border: 2px solid #eee;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -o-transform: translateY(0);
+  }
+  40% {
+    -o-transform: translateY(-30px);
+  }
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 p {
   font-size: 0.938rem;
 }
@@ -124,7 +222,7 @@ nav {
 }
 #home {
   position: relative;
-  height: 75vh;
+  height: 85vh;
   padding-bottom: 0;
 }
 
@@ -291,12 +389,6 @@ nav {
   color: #664e01;
   opacity: 0.5;
 }
-.chevy {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 5em;
-  cursor: pointer;
-}
 
 .section-title {
   font-size: 30px;
@@ -432,6 +524,24 @@ p .book {
   padding-top: 2em;
   color: #f1f7e4;
 }
+.service {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.services-btn {
+  color: #eee;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+.services-btn:hover {
+  background: white;
+  color: #795c00;
+  border-radius: 20px;
+}
 .section-subtitle {
   display: block;
   text-align: center;
@@ -450,6 +560,7 @@ p .book {
   position: relative;
   width: 95%;
   margin: 0 auto;
+  margin-top: 1.5em;
   display: flex;
   font-family: "poppins";
   justify-content: center;
@@ -522,6 +633,42 @@ p .book {
   margin-top: -70px;
   transition-delay: 0.3s;
 }
+
+/* ================ study tour=================*/
+.study-tour {
+  background: white;
+  height: 100vh;
+}
+.tour-container {
+  padding-top: 4.6em;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  z-index: 0;
+}
+.tour {
+  padding: 1em;
+  border: 1px solid #795c00;
+  background:#886800c5;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.part {
+  text-decoration: none;
+  color: #eee;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.part:hover, .tour:hover{
+  color: #915804b0;
+  background: #8f560017;
+}
+
+
 
 /* =========================OUR PARTNERS==========================*/
 
