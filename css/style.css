@@ -638,6 +638,12 @@ p .book {
 .tour-html {
   background: white;
 }
+.cards-container {
+  width: 72%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 .study-tour {
   background: white;
 }
@@ -688,34 +694,45 @@ p .book {
 .tour-title {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 1em;
+  line-height: 27px;
   font-family: "Times New Roman";
-  font-weight: 300;
-  font-size: 25px;
+  font-weight: 100;
+  font-size: 22px;
   font-style: italic;
   text-align: center;
 }
 
 .card {
   position: relative;
-  width: 38vh;
+  width: 40vh;
   margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1);
   height: 60vh;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
 }
 
-.container {
+.cont {
+  width: 85%;
+  margin: 0 auto;
   text-align: center;
+  cursor: pointer;
 }
-.container h4 {
-  line-height: 4em;
+.program-title {
+  margin-top: 1em;
+  line-height: 2.5em;
 }
-.container p {
+.program-summ{
+  margin-top: 1em;
   font-size: 14px;
 }
 
@@ -1139,6 +1156,7 @@ p .book {
     top: 0;
   }
   .sticky nav {
+    width: 100%;
     padding-bottom: 25px;
     padding-top: 15px;
     border-bottom-left-radius: 10px;
@@ -1230,14 +1248,14 @@ p .book {
     margin-top: -70px;
     transition-delay: 0.3s;
   }
-  
+
   .contact-section {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
   }
-  
 
   .contact-information {
+    margin-left: 20px;
     margin-bottom: 2em;
     justify-content: center;
   }
@@ -1250,7 +1268,6 @@ p .book {
   }
   .contact-form {
     margin-left: 3em;
-    
   }
 
   .contact-container,
@@ -1258,7 +1275,7 @@ p .book {
     display: flex;
     flex-direction: column;
   }
-  
+
   .footer-links {
     row-gap: 1em;
   }
@@ -1373,6 +1390,5 @@ p .book {
   }
   .contact-form {
     margin-left: 1em;
-    
   }
 }
