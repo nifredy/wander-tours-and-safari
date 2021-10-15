@@ -1,6 +1,6 @@
 /*window.addEventListener("scroll", function () {
-  var header = document.getElementById("header");
-  header.classList.toggle("sticky", window.scrollY);
+  var header = document.getElementById("tour");
+  header.classList.toggle("pro", window.scrollY);
 });
 
  showing the menu */

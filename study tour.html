@@ -8,7 +8,7 @@
     <title>study-tour</title>
   </head>
   <body>
-    <header class="sticky border">
+    <header class="border">
       <nav class="nav">
         <a href="index.html"
           ><img class="logo" src="img/wonder.png" alt=""
@@ -132,24 +132,25 @@
           </svg>
         </div>
       </nav>
+      <nav class="study-tour" id="tour">
+        <div class="tour-container">
+          <div class="tour">
+            <h3 class="active-part">
+              <a href="#">Discipline-Focused programs</a>
+            </h3>
+          </div>
+          <div class="tour">
+            <h3 class="part">
+              <a href="interculture.html">Our Intercultural-Focused programs</a>
+            </h3>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--====================study-tour*=================-->
 
-    <nav class="study-tour">
-      <div class="tour-container">
-        <div class="tour">
-          <h3 class="active-part">
-            <a href="#">Discipline-Focused programs</a>
-          </h3>
-        </div>
-        <div class="tour">
-          <h3 class="part">
-            <a href="interculture.html">Our Intercultural-Focused programs</a>
-          </h3>
-        </div>
-      </div>
-    </nav>
+    
 
     <section class="discipline-focused">
       <h3 class="tour-title">
@@ -213,6 +214,22 @@
       </div>
     </section>
 
-    <script src="./js/app.js"></script>
+    <! ================================== SCROLL-UP ==================================================== >
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        style="fill: rgba(255, 255, 255, 1); transform: msfilter"
+      >
+        <path
+          d="m12 6.879-7.061 7.06 2.122 2.122L12 11.121l4.939 4.94 2.122-2.122z"
+        ></path>
+      </svg>
+    </a>
+
+    <script src="./js/programs.js"></script>
   </body>
 </html>
