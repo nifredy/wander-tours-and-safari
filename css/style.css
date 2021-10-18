@@ -671,7 +671,7 @@ p .book {
   display: grid;
   width: 100%;
   margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
 }
 .active-part {
@@ -692,6 +692,7 @@ p .book {
 .part {
   text-align: center;
   padding: 0.8em;
+  border-right: 1px solid #eee;
   background: #886800c5;
   cursor: pointer;
   transition: 0.2s;
