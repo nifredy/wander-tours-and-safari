@@ -676,7 +676,7 @@ p .book {
 }
 .active-part {
   text-align: center;
-  padding: 0.8em;
+  padding: 0.2em;
   background: white;
   cursor: pointer;
   transition: 0.2s;
@@ -691,7 +691,7 @@ p .book {
 }
 .part {
   text-align: center;
-  padding: 0.8em;
+  padding: 0.2em;
   border-right: 1px solid #eee;
   background: #886800c5;
   cursor: pointer;
