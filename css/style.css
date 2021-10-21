@@ -850,7 +850,7 @@ p .book {
   z-index: 2;
 }
 .big-logo {
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
 }
 .big-logo img {
@@ -860,7 +860,30 @@ p .book {
   align-content: center;
   text-align: center;
 }
-
+.about-title .section-title{
+  margin-top: 2em;
+  line-height: 2em;
+}
+.about-title hr{
+  width: 5%;
+  height: 4.5px;
+  border-radius: 100%;
+  background:#2a3d00;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+}
+.about-details{
+  
+}
+.about-details p{
+  width: 75%;
+  font-size:20px;
+  margin: 0 auto;
+}
+.about-details img{
+  width: 20%;
+  right: 0;
+}
 /* =========================CONTACTTTTTT==========================*/
 .contact-section {
   background: #dfd8bc;
