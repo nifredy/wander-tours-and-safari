@@ -263,23 +263,7 @@ nav {
   background: rgb(246, 246, 246);
 }
 
-.border ul {
-  margin-top: 0.5em;
-}
 
-.border nav {
-  position: relative;
-  padding: 0;
-  background: rgb(246, 246, 246);
-}
-.border .book-1 {
-  margin-top: -2em;
-}
-.border .book-1:hover {
-  background: transparent;
-  border-top: 1px solid #886800;
-  border-bottom: 1px solid #886800;
-}
 
 .link {
   margin-top: 1px;
@@ -651,8 +635,9 @@ p .book {
 
 /* ================ study tour=================*/
 .tour-html {
-  background: white;
+  background: #fff;
 }
+
 .study-tour {
   z-index: 0;
 }
@@ -722,7 +707,6 @@ p .book {
   text-align: center;
 }
 
-
 .card {
   position: relative;
   width: 40vh;
@@ -749,7 +733,7 @@ p .book {
 }
 .program-title {
   font-size: 20px;
-  margin-top: .7em;
+  margin-top: 0.7em;
   line-height: 2em;
 }
 .program-summ {
@@ -838,9 +822,10 @@ p .book {
 }
 
 /* ============================ABOUT US==================================*/
-.shadow nav {
-  background: white;
-  box-shadow: 0px -2px 20px rgba(182, 175, 155, 0.507);
+.about-html{
+  background: url(../img/bg\ about.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
 }
 .border {
   position: sticky;
@@ -849,38 +834,88 @@ p .book {
   transition: 0.3s;
   z-index: 2;
 }
+.border ul {
+  margin-top: 0.5em;
+}
+
+.border nav {
+  position: relative;
+  padding: 0;
+  background: rgb(246, 246, 246);
+}
+.border .book-1 {
+  margin-top: -2em;
+}
+.border .book-1:hover {
+  background: transparent;
+  border-top: 1px solid #886800;
+  border-bottom: 1px solid #886800;
+}
+.shadow ul {
+  margin-top: 0.5em;
+}
+
+.shadow nav {
+  position: relative;
+  padding: 0;
+  background: rgb(246, 246, 246);
+}
+.shadow .book-1 {
+  margin-top: -2em;
+}
+.shadow .book-1:hover {
+  background: transparent;
+  border-top: 1px solid #886800;
+  border-bottom: 1px solid #886800;
+}
+.shadow nav {
+  background: white;
+  box-shadow: 0px -2px 20px rgba(182, 175, 155, 0.507);
+}
+.shadow{
+  position: sticky;
+  top: 0;
+  display: relative;
+  transition: 0.3s;
+  z-index: 2;
+}
 .big-logo {
+  position: relative;
   width: 30%;
   margin: 0 auto;
 }
 .big-logo img {
+  position: relative;
   width: 100%;
   margin: 0 auto;
+  margin-top: 1em;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
-.about-title .section-title{
-  margin-top: 2em;
-  line-height: 2em;
+.about-title .section-title {
+  margin-top: 1em;
+  line-height: 1.5em;
 }
-.about-title hr{
+.about-title hr {
   width: 5%;
   height: 4.5px;
   border-radius: 100%;
-  background:#2a3d00;
+  background: #2a3d00;
   margin: 0 auto;
-  margin-bottom: 2.5em;
+  margin-bottom: 1em;
 }
-.about-details{
-  
+.about-details {
 }
-.about-details p{
-  width: 75%;
-  font-size:20px;
+.about-details p {
+  width: 70%;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 35px;
   margin: 0 auto;
 }
-.about-details img{
+.about-details img {
+  display: none;
   width: 20%;
   right: 0;
 }
@@ -948,7 +983,6 @@ p .book {
 }
 .footer {
   padding-top: 1rem;
-  background: #8868000c;
   z-index: -1;
 }
 .footer-container {
@@ -1228,12 +1262,12 @@ p .book {
   .tour a {
     font-size: 14px;
   }
-  .cards-container{
+  .cards-container {
     width: 95%;
   }
-  .tour-title{
+  .tour-title {
     width: 60%;
-    font-size:20px ;
+    font-size: 20px;
   }
 
   .program-title {
@@ -1244,6 +1278,18 @@ p .book {
   .program-summ {
     margin-top: 1em;
     font-size: 14px;
+  }
+  .about-details p {
+    width: 80%;
+    font-size: 16px;
+  }
+  .about-title hr {
+    width: 10%;
+    height: 4.5px;
+    border-radius: 100%;
+    background: #2a3d00;
+    margin: 0 auto;
+    margin-bottom: 1em;
   }
   .scrollup {
     background: #886800b4;
@@ -1272,10 +1318,10 @@ p .book {
   .border .nav {
     height: 3.5rem;
   }
-  .border .nav .logo{
+  .border .nav .logo {
     margin-top: -20px;
   }
-  .border .nav-toggle{
+  .border .nav-toggle {
     margin-top: 10px;
   }
   .nav {
@@ -1290,7 +1336,7 @@ p .book {
   .logo {
     display: flex;
     width: 6rem;
-    margin-top: -12px;
+    margin-top: -20px;
     z-index: 0;
   }
   .nav-close,
@@ -1443,14 +1489,14 @@ p .book {
   .our-partners-logos {
     grid-template-columns: repeat(1, 1fr);
   }
-  
-  .tour-title{
+
+  .tour-title {
     width: 80%;
-    font-size:17px ;
+    font-size: 17px;
   }
   .program-title {
     font-size: 15px;
-    margin-top: .7em;
+    margin-top: 0.7em;
     line-height: 1em;
   }
   .program-summ {
@@ -1515,6 +1561,11 @@ p .book {
   .footer-copy {
     font-size: 12px;
   }
+  .big-logo {
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+  }
 
   .scrollup {
     padding: 0.15rem;
@@ -1532,7 +1583,7 @@ p .book {
     font-size: 13px;
   }
 
-  .bounce{
+  .bounce {
     bottom: 70px;
   }
 
@@ -1543,10 +1594,10 @@ p .book {
   #home h2 {
     width: 95%;
     margin-top: 1em;
-    font-size: 12px;
+    font-size: 13px;
   }
   p .book {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .section-title {
@@ -1557,7 +1608,7 @@ p .book {
   }
   .events-container1 p {
     text-align: justify;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 2em;
     margin-left: 1em;
     margin-right: 1em;
@@ -1567,7 +1618,7 @@ p .book {
   }
   .events-container2 p {
     text-align: justify;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -1618,7 +1669,12 @@ p .book {
 
   .tour a {
     font-size: 12px;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
+  }
+  .about-details p {
+    width: 80%;
+    font-size: 13px;
+    line-height: 25px;
   }
 }
 
@@ -1638,17 +1694,17 @@ p .book {
     height: 200px;
   }
 
-  .tour-title{
+  .tour-title {
     width: 85%;
-    font-size:13px ;
+    font-size: 13px;
     line-height: 1.5em;
   }
-  .cont{
+  .cont {
     width: 95%;
   }
   .program-title {
     font-size: 13px;
-    margin-top: .5em;
+    margin-top: 0.5em;
     line-height: 1em;
   }
   .program-summ {
