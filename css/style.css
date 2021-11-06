@@ -905,8 +905,37 @@ p .book {
   margin: 0 auto;
   margin-bottom: 1em;
 }
-.about-details {
+.about-leader{
+  
 }
+.leader-info{
+  margin-bottom: 10em;
+}
+.leader-img{
+  width: 15%;
+  margin: 0 auto;
+  margin-top: -25em;
+}
+.leader-title{
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  line-height: 5em;
+  color: #1d2b01;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.leader-img img{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.leader-bg{
+  width: 100%;
+  margin: 2em 0 2em 0;
+}
+
 .about-details p {
   width: 70%;
   font-size: 18px;
@@ -914,12 +943,33 @@ p .book {
   line-height: 35px;
   margin: 0 auto;
 }
-.about-details img {
-  display: none;
-  width: 20%;
-  right: 0;
+
+.mission{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
 }
+
+.focus{
+  margin: 0 2em 2em 2em;
+}
+.mission-title{
+  color: #1d2b01;
+}
+.mission-p{
+  font-size: 16px;
+  
+}
+
+
+
 /* =========================CONTACTTTTTT==========================*/
+#contact .section-title{
+  line-height: 7em;
+}
+#contact .section-subtitle{
+  margin-top: -1em;
+}
 .contact-section {
   background: #dfd8bc;
   border-bottom-right-radius: 60px;
@@ -1158,6 +1208,13 @@ p .book {
     margin-top: 1em;
     font-size: 16px;
   }
+
+  .leader-info{
+    margin-bottom: 5em;
+  }
+  .leader-img{
+    margin-top: -20em;
+  }
 }
 
 @media screen and (max-width: 978px) {
@@ -1290,6 +1347,25 @@ p .book {
     background: #2a3d00;
     margin: 0 auto;
     margin-bottom: 1em;
+  }
+  .leader-info{
+    margin-bottom: 5em;
+  }
+  .leader-title{
+    line-height: 3em;
+    font-size: 17px;
+  }
+  .leader-img{
+    margin-top: -15em;
+  }
+  .mission{
+    width: 95%;
+  }
+  .mission-p{
+    font-size: 14px;
+  }
+  .mission-title{
+    font-size: 22px;
   }
   .scrollup {
     background: #886800b4;
@@ -1504,6 +1580,32 @@ p .book {
     font-size: 10px;
   }
 
+  .about-details p{
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .leader-info{
+    margin-bottom: 3.5em;
+  }
+  .leader-title{
+    font-size: 13px;
+  }
+  .leader-img{
+    margin-top: -11em;
+  }
+  .mission{
+    width: 95%;
+    flex-direction: column;
+    text-align: justify;
+  }
+  .mission-p{
+    font-size: 12px;
+  }
+  .mission-title{
+    font-size: 20px;
+  }
+
   .contact-section {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -1675,6 +1777,30 @@ p .book {
     width: 80%;
     font-size: 13px;
     line-height: 25px;
+    margin-bottom: 3.9em;
+  }
+  .leader-info{
+    margin-bottom: 3.5em;
+  }
+  .leader-title{
+    font-size: 10px;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+  }
+  .leader-img{
+    width: 25%;
+    margin-top: -10em;
+  }
+  
+  .mission{
+    text-align: center;
+  }
+  .mission-p{
+    font-size: 11px;
+  }
+  .mission-title{
+    font-size: 18px;
+    line-height: 2em;
   }
 }
 
@@ -1711,6 +1837,25 @@ p .book {
     margin-top: 1em;
     font-size: 9px;
   }
+  .leader-info{
+    margin-bottom: 3em;
+  }
+  .leader-title{
+    font-size: 11px;
+  }
+  .leader-img{
+    margin-top: -10em;
+  }
+  .leader-img img{
+    box-shadow: rgba(2, 2, 2, 0.63) 0px 2px 5px;
+  }
+  
+  .mission-p{
+    font-size: 11px;
+  }
+  .mission-title{
+    line-height: 2em;
+  }
 }
 @media screen and (max-width: 316px) {
   .service-card {
@@ -1737,5 +1882,32 @@ p .book {
     height: 140px;
     align-items: center;
     justify-content: center;
+  }
+  .about-details p{
+    line-height: 22px;
+  }
+  .leader-info{
+    margin-bottom: 2.5em;
+  }
+  .leader-title{
+    font-size: 9px;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+  }
+  .leader-img{
+    margin-top: -9em;
+  }
+  .leader-img img{
+    box-shadow: rgba(2, 2, 2, 0.63) 0px 2px 5px;
+  }
+  .mission{
+    width: 100%;
+  }
+  
+  .mission-p{
+    font-size: 11px;
+  }
+  .mission-title{
+    line-height: 2em;
   }
 }
