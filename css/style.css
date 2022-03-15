@@ -515,6 +515,10 @@ p .book {
   transition: 3s ease-out;
 }
 
+.view-more{
+  padding-bottom: 1em;
+}
+
 /* ==================services=======================*/
 #services {
   background: #3d2f02e8;
@@ -623,6 +627,7 @@ p .book {
 }
 .explore {
   color: #2a3d00;
+  font-size: 17px;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -1189,7 +1194,6 @@ p .book {
     padding-left: 10px;
     font-size: 20px;
   }
-
   .nav-link {
     font-size: 20px;
   }
@@ -1248,7 +1252,15 @@ p .book {
     width: 150vw;
     margin: 0 auto;
   }
+  .arrow{
+    display: none;
+  }
+  #our-partners{
+    overflow-x: hidden;
+  }
   .our-partners-logos {
+    width: 85%;
+    padding-left: 7em;
     grid-auto-columns: 10px;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
@@ -1359,6 +1371,7 @@ p .book {
   }
   .our-partners-logos {
     grid-gap: 10px;
+    padding-left: 4em;
   }
   .logo1 {
     width: 30vh;
@@ -1651,6 +1664,7 @@ p .book {
 
   .our-partners-logos {
     grid-template-columns: repeat(1, 1fr);
+    padding-left: 1.5em;
   }
 
   .tour-title {
